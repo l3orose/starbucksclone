@@ -21,6 +21,7 @@ li{
 }
 h4 {
   font-weight: 400;
+  color: gray;
 }
 
 header{
@@ -45,8 +46,9 @@ header .logo {
     position: absolute;
     left:0;
     top:0;
-    width: 62.5%;
+    width: 80.5%;
     margin-top: 36px;
+    padding-top: 30px;
     padding-left: 20px;
     top:50px;
     height:calc(100vh - 50px);
@@ -70,17 +72,53 @@ header .logo {
     padding: 0 10px;
     text-decoration:none;
     transition:.4s ease;
+    font-size: 18px;
+    color: rgb(116, 116, 116);
+  }
+  .navigation .sign a:first-child:hover {
+    background-color: rgb(221, 218, 218);
+    color: black;
+  }
+  .navigation .sign a:nth-child(2):hover {
+    background-color: rgb(71, 71, 71);
+    color: white;
+  }
+  .navigation li:nth-child(4) a:hover{
+    color: #006241;
+    
   }
   .navigation .sign {
     display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin: 20px 0;
+    gap: 10px;
+    width: 330px;
+    border-top: 1px solid rgba(197, 193, 193, 0.5);
+    
+  }
+  .navigation .sign a {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px black solid;
+    width: 100px;
+    height: 30px;
+  }
+
+  .navigation .sign a:nth-child(2) {
+    background-color: black;
+    color: white;
+   
   }
   #btn-nav{
     display: none;
   }
   #btn-nav:checked ~ .nav_header{
-    transform:translateX(60%);
-  }
-  
+    transform:translateX(30%);
+  }  
   .btn-nav{
     font-size:30px;
     position: absolute;
@@ -98,18 +136,16 @@ main {
   flex-direction: column;
   width: 100%;
   overflow: hidden;
-  }
-  h3{
-    font-size: 30px;
-    font-weight: 400;
-  }
-  .contenedor {
-    margin-bottom: 30px;
-  }
-.contenedor img{
-  width: 100%;
-  
 }
+h3{
+  font-size: 30px;
+  font-weight: 400;
+}
+  
+.contenedor img{
+  width: 100%;  
+}
+
 .contenedor_txt {
   display: flex;
   flex-direction: column;
@@ -122,9 +158,11 @@ main {
   color: white;  
 }
 .contenedor_txt p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 21px;
   line-height: 1.5; 
- align-items: center;
 }
 .contenedor_txt a{
   text-decoration: none;
@@ -191,44 +229,154 @@ footer .head {
   justify-content: space-between;
   padding: 0 20px;
   width: 100%;  
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-.nav_header_footer1, .nav_header_footer2{  
+footer div:first-child {
+  border-top: 2px solid rgba(197, 193, 193, 0.5);
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.nav_header_footer1, .nav_header_footer2, .nav_header_footer3, .nav_header_footer4,
+.nav_header_footer5{  
   display: none;
 }
 footer label i.bi {
   font-size: 20px;  
-} git 
+} 
 
-.navigation_footer1 a, .navigation_footer2 a{
-  color: rgb(167, 158, 158);
+.navigation_footer1 a, .navigation_footer2 a, .navigation_footer3 a, .navigation_footer4 a,
+.navigation_footer5 a{
+  color: rgb(190, 190, 190);
   line-height:2.3;  
   text-decoration:none;  
 }
 
-#btn-nav_footer1, #btn-nav_footer2{
-  display: none;
+#btn-nav_footer1, #btn-nav_footer2, #btn-nav_footer3,
+#btn-nav_footer4, #btn-nav_footer5{
+  display: none;  
 }
-#btn-nav_footer1:checked ~ .nav_header_footer1, #btn-nav_footer2:checked ~ .nav_header_footer2{
+#btn-nav_footer1:checked ~ .nav_header_footer1, #btn-nav_footer2:checked ~ .nav_header_footer2,
+#btn-nav_footer3:checked ~ .nav_header_footer3, #btn-nav_footer4:checked ~ .nav_header_footer4,
+#btn-nav_footer5:checked ~ .nav_header_footer5{
+  display: flex;
+  align-items: center;  
+  padding: 0px 20px;  
+}
+
+.footer_ultimo {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid rgba(197, 193, 193, 0.5);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.footer_ultimo .social {
+  display: flex;        
+}
+footer .social a{
+  color: black; 
+  font-size: 30px;
+  width: 50px; 
+  height: 50px;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  justify-content: center;  
+}
+footer .social a:hover {
+  background-color: rgb(221, 216, 216);  
+  border-radius: 100%;
+  transition: 0.5s;
+}
+footer .enlaces_footer {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 30px 20px;
+  gap: 20px;
+}
+footer .enlaces_footer a{
+  text-decoration: none;
+  color: rgb(44, 44, 44);
+  font-weight: 300;
+  font-size: 14px;
+}
+footer .enlaces_footer a:hover {
+  text-decoration: underline;
+}
+footer p{
+  color: rgb(165, 163, 163);
+  font-weight: 300;
+  font-size: 15px;
 }
 
-.btn-nav_footer1, .btn-nav_footer2{
-  font-size:30px;    
-  cursor:pointer;
-  transition:.2s ease;
-  background-color: white;
-}
 
-.btn-nav_footer1:hover, .btn-nav_footer2:hover{
-  background-color: white;
-}
 
-@media (min-width: 768px) {
+
+/* ------------------------------------------------------- */
+@media (min-width: 808px) {
+  h3 {
+    font-size: 50px;
+  }
   nav, label {
     display: none;
   }
+  header {
+    height: 90px;
+    padding-left: 40px;
+  }
+  .nav_header {
+    position: none;
+    display: flex;    
+    transform: none;
+    height: 50px;
+    width: 500px;
+    top: 0;
+    left: 130px;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+  .navigation {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;    
+  }
+  .navigation a {
+    display: flex;
+    width: 110px;
+    line-height: 1.3;
+    margin-right: -20px;
+  }
+  .navigation li {
+    display: flex;
+    justify-content: center;        
+  }
+
+  .navigation li.signn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 480px;
+    order: 0;    
+  }
+  .navigation .signn a:nth-child(2){
+    width: 150px;
+  }
+  .navigation .sign {
+    border: none;
+    order: 2;
+  }
+  .navigation .signn a{
+    margin-right: 20px;    
+    order: 1;    
+    width: 100px;
+  }
+  .navigation .sign a:nth-child(2){
+    width: 100px;
+  }
+
   .contenedor{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -240,24 +388,19 @@ footer label i.bi {
   .contenedor_txt {
     margin-top: 0px;
   }
-  .nav_header {
-    display: flex;
-    transform: translateX(0%);
-    width: 10%;
-    top: 0;
-    margin: 0;
-    padding: 0;
+  .politicas {
+    width: 100%;
+    justify-content: center;   
+    margin-top: 100px;
   }
-  .navigation {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    height: 30px;
+  .politicas p {
+    font-size: 15px;
+    width: 800px;
+    line-height: 2;
   }
-  .navigation a {
-    display: flex;
-    position: relative;
-  }
+  
+  
+
 
     
 }
