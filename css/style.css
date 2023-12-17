@@ -143,6 +143,11 @@ h3{
 }
 .contenedor {
   margin-bottom: 30px;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
   
 .contenedor img{
@@ -236,8 +241,14 @@ footer .head {
   justify-content: space-between;
   padding: 0 20px;
   width: 100%;  
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-top: 45px;  
+}
+footer .head h4{
+  color: rgb(27, 27, 27);
+  font-weight: 300;
+  font-size: 16px;
+  
 }
 
 
@@ -251,7 +262,7 @@ footer label i.bi {
 
 .navigation_footer1 a, .navigation_footer2 a, .navigation_footer3 a, .navigation_footer4 a,
 .navigation_footer5 a{
-  color: rgb(190, 190, 190);
+  color: rgb(110, 110, 110);
   line-height:2.3;  
   text-decoration:none;  
 }
