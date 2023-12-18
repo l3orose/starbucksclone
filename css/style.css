@@ -23,7 +23,6 @@ h4 {
   font-weight: 400;
   color: gray;
 }
-
 header{
     background: #fff;
     display: flex;
@@ -36,11 +35,10 @@ header{
     margin-bottom: 30px;
     -webkit-box-shadow: 0px 5px 4px -3px rgba(124, 124, 124, 0.75);
     -moz-box-shadow: 0px 5px 4px -3pxrgba(124, 124, 124, 0.75);;
-    box-shadow: 0px 5px 4px -3px rgba(124, 124, 124, 0.75);;
-    
+    box-shadow: 0px 5px 4px -3px rgba(124, 124, 124, 0.75);;    
 }
 header .logo {
-    width: 50px;
+    width: 53px;
 }
 .nav_header{
     position: absolute;
@@ -63,8 +61,7 @@ header .logo {
     list-style:none;
     width: 100%;
     border-bottom: 1px solid rgba(255,255,255,.5);
-  }
-  
+  }  
   .navigation a{
     display: block;
     color: black;
@@ -84,8 +81,7 @@ header .logo {
     color: white;
   }
   .navigation li:nth-child(4) a:hover{
-    color: #006241;
-    
+    color: #006241;    
   }
   .navigation .sign {
     display: flex;
@@ -94,8 +90,7 @@ header .logo {
     margin: 20px 0;
     gap: 10px;
     width: 330px;
-    border-top: 1px solid rgba(197, 193, 193, 0.5);
-    
+    border-top: 1px solid rgba(197, 193, 193, 0.5);    
   }
   .navigation .sign a {
     display: flex;
@@ -107,14 +102,12 @@ header .logo {
     width: 100px;
     height: 30px;
   }
-
   .navigation .sign a:nth-child(2) {
     background-color: black;
-    color: white;
-   
+    color: white;  
   }
   #btn-nav{
-    display: none;
+    display: none;        
   }
   #btn-nav:checked ~ .nav_header{
     transform:translateX(30%);
@@ -126,8 +119,7 @@ header .logo {
     cursor:pointer;
     transition:.2s ease;
     background-color: white;
-  }
-  
+  }  
   .btn-nav:hover{
     background-color: white;
   }
@@ -148,12 +140,10 @@ h3{
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-  
+}  
 .contenedor img{
   width: 100%;  
 }
-
 .contenedor_txt {
   display: flex;
   flex-direction: column;
@@ -183,7 +173,7 @@ h3{
 .cont1 a:hover {
   background-color: var(--vinotintodark);
 }
-.cont2 .contenedor_txt{
+.cont2, .cont2 .contenedor_txt {
   background-color: var(--verdeNavidad);
 }
 .cont2 a:hover, .cont4 a:hover, .cont5 a:hover {
@@ -200,10 +190,16 @@ h3{
  .cont3 a:hover {
   background-color: var(--rosadark);
  }
- .cont4  {
+ .cont4 {
   background-color: var(--mora);
  }
- .cont4 .contenedor_txt, .cont5 .contenedor_txt {
+ .cont4 .contenedor_txt {
+  height: 100%;
+  background-color: var(--verdeNavidad);
+ }
+
+ .cont5 .contenedor_txt {
+  height: 100%;
   background-color: var(--verdeNavidad);
  }
 .cont6, .cont6 .contenedor_txt {
@@ -212,7 +208,6 @@ h3{
 .cont6 a:hover{
   background-color: var(--rojodark) ;
 }
-
 .politicas {
   display: flex;
   flex-direction: column;
@@ -220,7 +215,6 @@ h3{
   gap: 60px;
   padding: 50px 0;
   border-bottom: 2px solid rgba(197, 193, 193, 0.5);
-
 }
 .politicas p{
   font-size: 14px;
@@ -244,14 +238,12 @@ footer .head {
   margin-bottom: 5px;
   margin-top: 45px;  
 }
+
 footer .head h4{
-  color: rgb(27, 27, 27);
-  font-weight: 300;
-  font-size: 16px;
-  
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 16px;  
 }
-
-
 .nav_header_footer1, .nav_header_footer2, .nav_header_footer3, .nav_header_footer4,
 .nav_header_footer5{  
   display: none;
@@ -259,26 +251,23 @@ footer .head h4{
 footer label i.bi {
   font-size: 20px;  
 } 
-
 .navigation_footer1 a, .navigation_footer2 a, .navigation_footer3 a, .navigation_footer4 a,
 .navigation_footer5 a{
   color: rgb(110, 110, 110);
   line-height:2.3;  
-  text-decoration:none;  
+  text-decoration:none;    
 }
-
 #btn-nav_footer1, #btn-nav_footer2, #btn-nav_footer3,
 #btn-nav_footer4, #btn-nav_footer5{
-  display: none;  
+  display: none;   
 }
 #btn-nav_footer1:checked ~ .nav_header_footer1, #btn-nav_footer2:checked ~ .nav_header_footer2,
 #btn-nav_footer3:checked ~ .nav_header_footer3, #btn-nav_footer4:checked ~ .nav_header_footer4,
 #btn-nav_footer5:checked ~ .nav_header_footer5{
-  display: flex;
+  display: flex;  
   align-items: center;  
-  padding: 0px 20px;  
+  padding: 0px 20px;    
 }
-
 footer .footer_ultimo {
   display: flex;
   flex-direction: column;
@@ -376,11 +365,21 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 530px;
+    margin-left: 540px;
     order: 0;    
   }
   .navigation .signn a:nth-child(2){
+    display: flex;
+    align-items: center;
     width: 150px;
+    font-size: 15px;
+  }
+  .navigation .signn a:nth-child(2) i {
+    margin-right: 5px;
+    font-size: 22px;
+  }
+  .navigation .signn a:nth-child(2):hover{
+    color: var(--verdedark);
   }
   .navigation .sign {
     border: none;
@@ -393,12 +392,11 @@ footer p{
     font-weight: 400;   
     color: black;
     order: 1;    
-    width: 100px;
+    width: 90px;
   }
   .navigation .sign a:nth-child(2){
     width: 100px;
   }
-
   .contenedor{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -409,6 +407,12 @@ footer p{
   }
   .contenedor_txt {
     margin-top: 0px;
+  }
+  .cont1 {
+    background-color: var(--vinotinto);
+  }
+  .cont2 {
+    background-color: var(--verdeNavidad);
   }
   .politicas {
     width: 100%;
@@ -421,13 +425,11 @@ footer p{
     font-size: 15px;
     width: 800px;
     line-height: 2;
-  }
-  
+  }  
   .nav_header_footer1, .nav_header_footer2, .nav_header_footer3, .nav_header_footer4,
   .nav_header_footer5{  
   display: flex;
 }
-
 .menu_ultimo {
   display: flex;    
   border: none;
@@ -458,8 +460,7 @@ footer p{
 }
 footer .enlaces_footer {
   flex-direction: row;
-  gap: 30px;
-  
+  gap: 30px;  
 }
 footer .enlaces_footer a {
   font-size: 16px;
@@ -470,9 +471,5 @@ footer .enlaces_footer a {
 }
 footer .enlaces_footer a:last-child {
   border: none;
-}
-
-
-
-    
+}    
 }
