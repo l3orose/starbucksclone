@@ -255,7 +255,7 @@ footer label i.bi {
 .navigation_footer5 a{
   color: rgb(110, 110, 110);
   line-height:2.3;  
-  text-decoration:none;    
+  text-decoration:none;      
 }
 #btn-nav_footer1, #btn-nav_footer2, #btn-nav_footer3,
 #btn-nav_footer4, #btn-nav_footer5{
@@ -265,7 +265,7 @@ footer label i.bi {
 #btn-nav_footer3:checked ~ .nav_header_footer3, #btn-nav_footer4:checked ~ .nav_header_footer4,
 #btn-nav_footer5:checked ~ .nav_header_footer5{
   display: flex;  
-  align-items: center;  
+  align-items: center;
   padding: 0px 20px;    
 }
 footer .footer_ultimo {
@@ -342,6 +342,7 @@ footer p{
     padding: 0;
     gap: 0;
   }
+  
   .navigation {
     display: flex;  
     align-items: center;
@@ -365,7 +366,7 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 540px;
+    margin-left: 480px;
     order: 0;    
   }
   .navigation .signn a:nth-child(2){
